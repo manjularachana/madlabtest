@@ -4,26 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
-    android:background="#189198"
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <TextView
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/t1"
-        />
-    <fragment
-        android:name="com.example.fragments.f1"
+        android:layout_gravity="center"
+        android:text="First"
+        android:id="@+id/b1"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Second"
+        android:id="@+id/b2"></Button>
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/f1"
-
-        tools:layout="@layout/fragment_f1"></fragment>
-
+        android:id="@+id/frag_contain"></RelativeLayout>
 </LinearLayout>
